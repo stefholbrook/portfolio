@@ -1,0 +1,295 @@
+html, body {
+  margin: 0;
+  padding: 0;
+    text-transform: uppercase;
+    font-family: "roboto",Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 62.5%;
+}
+
+/*
+a:hover, 
+.a:hover, a {
+   text-decoration: none !important;
+  cursor: pointer;
+}
+*/
+
+/*Header & Nav#*/
+
+header, .footer {
+	background: #fff;
+    height: 50px;
+    width: 100%;
+}
+
+.logo>h1 {
+    float: left;
+    text-align: center;
+  padding: 30px;;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+
+.logo>h1, .menu { 
+    display: inline;
+  margin: -10px 100px;
+}
+
+/*Menu Toggle*/
+.toggle-nav {
+    display:none;
+}
+
+/*----- Toggle Button -----*/
+.toggle-nav {
+    display:none;
+}
+ 
+/*----- Links -----*/
+.menu {
+    float: right;
+    text-align: center;
+    padding: 8px;
+}
+
+ 
+.menu ul, .supporting ul {
+    display:inline-block;
+/*
+    position:inherit;
+  clear: inherit;
+*/
+}
+ 
+.menu li, .supporting li {
+    margin:20px 25px 0px 0px;
+    float: left;
+    list-style:none;
+    font-size: 1em;
+}
+ 
+.menu li:last-child {
+    margin-right:0px;
+}
+ 
+.header a, .supporting a {
+    color:#333;
+    transition:color linear 0.15s;
+}
+ 
+.header a:hover, .menu .current-item a, .supporting a:hover {
+    text-decoration:none;
+    color:#66a992;
+}
+
+/* hover state?
+ position: absolute;
+    bottom: -17px;
+    left: 50%;
+    height: 3px;
+    width: 50px;
+    margin-left: -25px;
+    display: block;
+    content: '';
+    background-color: #000;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+*/
+ 
+
+ 
+/*----- Responsive -----*/
+@media screen and (max-width: 1150px) {
+    .wrap {
+        width:90%;
+    }
+}
+ 
+@media screen and (max-width: 860px) {
+    .menu {
+      position: relative;
+      left: -100px;
+        display:inline-block;
+    }
+ 
+    .menu ul.active {
+        display:none;
+    }
+ 
+    .menu ul {
+        position: absolute;
+        top:120%;
+        left:0px;
+      width: auto;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#fff;
+    }
+ 
+    .menu ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        left:22px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-left:7px solid transparent;
+        border-right:7px solid transparent;
+        border-bottom:7px solid #fff;
+    }
+ 
+    .menu li {
+        margin:5px 0px 5px 0px;
+        float:none;
+        display:block;
+    }
+ 
+    .menu a {
+        display:block;
+    }
+ 
+    .toggle-nav {
+        padding:10px;
+        display:inline-block;
+/*
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+*/
+        background:#fff;
+        text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+        color:#333;
+        font-size:20px;
+        transition:color linear 0.15s;
+    }
+ 
+    .toggle-nav:hover, .toggle-nav.active {
+        text-decoration:none;
+        color:#66a992;
+    }
+ 
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: url(https://images.unsplash.com/photo-1446071103084-c257b5f70672?crop=entropy&fit=crop&fm=jpg&h=2075&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=725);
+  background-size: cover;
+  height: 800px;
+  height: 100vh;
+  max-height: 1024px;
+}
+
+.main {
+  background-color: rgba(204,187,187,0.8); 
+/*  background-color: rgba(255,255,255,0.5);*/
+  position: relative;
+  top: 120px;
+  text-align: center;
+   padding: 100px;
+}
+
+.main>h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+/*
+.title, ul {
+    text-align: center;
+    padding: 20px;
+}
+*/
+
+/*
+.btn-main {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 16px;
+  display: inline;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn-default {
+  border: 1px solid #333;
+  color: #333333;
+}
+*/
+.supporting {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.supporting img {
+  width: 100%;
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+/*About*/
+ .about{
+   background: url(https://images.unsplash.com/photo-1446071103084-c257b5f70672?crop=entropy&fit=crop&fm=jpg&h=2075&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=725);
+   image-size: cover;
+  text-align: center;
+   padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about h2 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 20px 50px;
+  margin-bottom: 40px;
+}
+
+/*Contact*/
+.contact {
+  margin: 50px;
+   padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  .main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+
+  .supporting .col {
+    width: 100%;
+  }
+}
