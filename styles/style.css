@@ -11,10 +11,10 @@ html, body {
   margin-bottom: 10px;
 }
 
-/*Header & Nav#*/
+/*Header & Nav*/
 
 header{
-	background: #fff;
+  background: #fff;
   height: 50px;
   width: 100%;
 }
@@ -69,6 +69,11 @@ header{
   color:#333;
   transition:color linear 0.15s;
   text-decoration: none;
+}
+
+.header a:visited, a:visited {
+  text-decoration: none !important;
+  color: #333;
 }
  
 .header a:hover, .menu .current-item a, .portfolio a:hover, .active {
@@ -188,6 +193,8 @@ header{
   font-size: 26px !important;
 }
 
+/*Portfolio*/
+
 .portfolio {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -235,11 +242,11 @@ header{
 /*About*/
 
  .about{
-  height: 100vh;
+  height: 800px;
   background-color: rgba(160,163,169, 0.2);
   text-align: center;
   padding: 100px 0 50px 0;
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 3px !important;
 }
 
@@ -265,7 +272,10 @@ header{
   margin-bottom: 50px;
 }
 
-
+.about .btn {
+  padding: 50px;
+  margin-bottom: 100px;
+}
 
 /*Contact*/
 
@@ -273,17 +283,19 @@ header{
   background: #333 url('../images/download.png');
   background-size: cover;
   height: 100vh;
+  height: 800px;
   padding-top: 50px 0;
+  margin-bottom: -100px;
   text-align: center;
   color: #fff;
   left: 0;
-	top: 0;
-	width: 100%;
-	z-index:1;
-	-webkit-animation: contact 80s linear infinite;
-	-moz-animation: contact 80s linear infinite;
-	-ms-animation: contact 80s linear infinite;
-	animation: contact 80s linear infinite;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  -webkit-animation: contact 80s linear infinite;
+  -moz-animation: contact 80s linear infinite;
+  -ms-animation: contact 80s linear infinite;
+  animation: contact 80s linear infinite;
 }
 
 @keyframes contact {
@@ -316,10 +328,31 @@ header{
 }
 
 .contact .title {
-  margin: 100px 0 120px 0;
+  margin: 100px 0 320px 0;
 }
 
- 
+/*Footer*/
+.footer {
+  background-color: transparent;;
+  color: #fff;
+  /*margin: 100px 0 -100px 0;*/
+}
+
+.name p {
+  font-size: 12px;
+  float: left;
+  margin: 20px;
+}
+
+.social li{
+  margin: 10px;
+    float: left;
+    list-style:none;
+}
+
+.social ul {
+  float: right;
+} 
 
 /*----Button----*/
 
@@ -364,28 +397,7 @@ header{
   color: #333 !important;
 }
 
-/*Footer*/
-.footer {
-  background-color: transparent;;
-  color: #fff;
-  margin-top: 100px;
-}
 
-.name p {
-  font-size: 12px;
-  float: left;
-  margin: 20px;
-}
-
-.social li{
-  margin: 10px;
-    float: left;
-    list-style:none;
-}
-
-.social ul {
-  float: right;
-}
 
 @media (max-width: 980px) {
   
@@ -413,6 +425,3 @@ header{
   }
 
 }
-
-
-
