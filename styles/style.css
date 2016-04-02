@@ -240,8 +240,7 @@ header{
   height: 800px;
   background-color: rgba(160,163,169, 0.2);
   text-align: center;
-  padding: 100px 0 50px 0;
-  margin-bottom: 50px;
+  padding: 100px 0 100px 0;
   font-size: 1.5em;
   line-height: 3px !important;
 }
