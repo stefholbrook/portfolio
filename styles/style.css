@@ -268,8 +268,8 @@ header{
 }
 
 .about .btn {
-  padding: 100px;
-  margin-bottom: 50px;
+  padding: 50px;
+  margin-bottom: 100px;
 }
 
 /*Contact*/
@@ -282,13 +282,13 @@ header{
   text-align: center;
   color: #fff;
   left: 0;
-	top: 0;
-	width: 100%;
-	z-index:1;
-	-webkit-animation: contact 80s linear infinite;
-	-moz-animation: contact 80s linear infinite;
-	-ms-animation: contact 80s linear infinite;
-	animation: contact 80s linear infinite;
+  top: 0;
+  width: 100%;
+  z-index:1;
+  -webkit-animation: contact 80s linear infinite;
+  -moz-animation: contact 80s linear infinite;
+  -ms-animation: contact 80s linear infinite;
+  animation: contact 80s linear infinite;
 }
 
 @keyframes contact {
