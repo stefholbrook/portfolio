@@ -235,11 +235,11 @@ header{
 /*About*/
 
  .about{
-  height: 100vh;
+  height: 800px;
   background-color: rgba(160,163,169, 0.2);
   text-align: center;
   padding: 100px 0 50px 0;
-  font-size: 1.1em;
+  font-size: 1.5em;
   line-height: 3px !important;
 }
 
