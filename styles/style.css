@@ -240,8 +240,8 @@ header{
   height: 800px;
   background-color: rgba(160,163,169, 0.2);
   text-align: center;
-  padding: 100px 0 150px 0;
-  font-size: 1.5em;
+  padding: 100px 0 50px 0;
+  font-size: 1.3em;
   line-height: 3px !important;
 }
 
@@ -267,7 +267,10 @@ header{
   margin-bottom: 50px;
 }
 
-
+.about .btn {
+  padding: 100px;
+  margin-bottom: 50px;
+}
 
 /*Contact*/
 
