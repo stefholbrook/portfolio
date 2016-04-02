@@ -33,27 +33,5 @@ $(document).ready(function($) {
     }
     
   });
-
-    
-    // $('form').submit(function() {
-    //     var email = $('#email').val();
-    // 	var subject = $('#subject').val();
-    // 	var message = $('#message').val();
-        
-    //     if(email === "") {
-    //     	$('.email-error').text("Please enter an email address");
-    //     }
-    	
-    //     if(subject === "") {
-    //     	$('.subject-error').text("Please enter a subject");
-    //     }
-    
-    //     if(message === "") {
-    //     	$('.message-error').text("Please enter a message");
-    //     }
-    	
-    //     return false;
-    // });
-
   
 });
