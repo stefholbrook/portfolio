@@ -323,14 +323,14 @@ header{
 }
 
 .contact .title {
-  margin: 100px 0 120px 0;
+  margin: 100px 0 220px 0;
 }
 
 /*Footer*/
 .footer {
   background-color: transparent;;
   color: #fff;
-  margin: 100px 0 -100px 0;
+  /*margin: 100px 0 -100px 0;*/
 }
 
 .name p {
