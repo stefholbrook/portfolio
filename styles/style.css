@@ -3,7 +3,7 @@ html, body {
   padding: 0;
   text-transform: uppercase;
   font-family: "Roboto",Helvetica,sans-serif;
-  font-size: 150%;
+  font-size: 200%;
   line-height: 3px;
 }
 
@@ -69,6 +69,11 @@ header{
   color:#333;
   transition:color linear 0.15s;
   text-decoration: none;
+}
+
+.header a:visited, a:visited {
+  text-decoration: none !important;
+  color: #333;
 }
  
 .header a:hover, .menu .current-item a, .portfolio a:hover, .active {
